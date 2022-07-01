@@ -1,0 +1,308 @@
+/*=========== Font Google =============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+/*=========== STAR ROOT =============*/
+:root{
+
+    --main-color: #876445;
+    --font-color: #363531;
+    --seconde-color:#CA965C;
+    --light-color: #EEC373;
+    --bg-color: #F4DFBA;
+    --transition-duration: 300ms;
+    --linear-gradient: linear-gradient(90.41deg, var(--main-color) 1.14%, var(--seconde-color) 100%);
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+}
+img{
+    max-width: 100%;
+}
+/*=========== STAR CONTAINER =============*/
+/* .container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 5px auto 30px;
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+/* X-Small Screen */
+/*@media (min-width: 470px) {
+    .container{
+        width: 440px;
+    }
+}*/
+/* Small Screen */
+/* @media (min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+} */
+/* Medim Screen */
+/* @media (min-width: 992px) {
+    .container{
+        width: 970px;
+    }
+    
+} */
+/* Large Screen */
+/* @media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+} */
+/* X-Large Screen */
+/* @media (min-width: 1400px) {
+    .container{
+        width: 1370px;
+    }
+}  */
+
+/*=========== Star Navbar ===========*/
+nav{
+    height: 70px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    background: #FFFFFF;
+    padding: 10px 20px;
+}
+nav .logo img{
+    max-height: 60px;
+}
+nav .navbar-toggler{
+    color: var(--seconde-color) ;
+}
+nav .navbar-toggler:focus{
+    color: var(--bg-color);
+}
+
+nav .navbar-nav li a{
+    color: var(--main-color);
+    font-size: 17px;
+    position: relative;
+    font-weight: 500;
+    transition: var(--transition-duration);
+}
+nav .navbar-nav li a:hover{
+    color: #876445;
+}
+@media (min-width:992px) {
+    nav .navbar-nav li a::after{
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 2px;
+        background-color: var(--seconde-color);
+        bottom: -5px;
+        left: 0;
+        transition: var(--transition-duration);
+    }
+    nav .navbar-nav li a:hover::after{
+        width: 100%;
+    }
+}
+
+@media (max-width:992px) {
+    .navbar-collapse{
+        position: relative;
+        margin-top: 10px;
+        background-color: #eec373d5;
+        padding: 25px;
+        border-radius: 8px;
+    }
+    nav .navbar-nav li:not(:last-child)::after{
+        position: absolute;
+        content: '';
+        width: calc(100% - 50px);
+        height: 2px;
+        background-color: var(--seconde-color);
+        left: 25px;
+        transition: var(--transition-duration);
+    }
+    nav .navbar-nav li a:hover{
+        padding-left: 30px;
+    }
+
+}
+/* Start Slider */
+.carousel{
+
+}
+.carousel img{
+
+}
+/* Start Main */
+main{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main h1{
+    font-size: 4rem;
+    letter-spacing: -2px;
+    color: var(--main-color);
+    text-align: center;
+}
+
+main p{
+    font-size: 1.25rem;
+    text-align: center;
+}
+@media (max-width:767px) {
+    main{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    main h1{
+         font-size: 2.5rem;
+     }
+ }
+/* Contact */
+.contact{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+@media (max-width:767px) {
+    .contact{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+.h2-component{
+    text-align: center;
+}
+.h2-component h2{
+    font-size: 3rem;
+    letter-spacing: -2px;
+    color: var(--main-color);
+
+}
+.h2-component .coffe-logo{
+    color: var(--bg-color);
+    position: relative;
+    font-size: 18px;
+}
+.h2-component .coffe-logo::before{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: var(--bg-color);
+    left: -60px;
+    top: 50%;
+}
+.h2-component .coffe-logo::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: var(--bg-color);
+    right: -60px;
+    top: 50%;
+}
+form label{
+    color: #CA965C;
+}
+.form-control:focus{
+    border-color: #CA965C;
+  box-shadow:   0 0 8px #ca975c74;
+  outline: 0 none;
+}
+form .btn{
+    background: #EEC373;
+    border:0;
+}
+form .btn:hover{
+    background: #876445;
+    box-shadow:   0 0 8px #ca975c74;
+}
+/* Directions */
+.directions{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+@media (max-width:767px) {
+    .directions{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+/* textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: rgba(126, 239, 104, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
