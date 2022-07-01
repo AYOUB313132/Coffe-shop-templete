@@ -187,7 +187,11 @@ main p{
     font-size: 3rem;
     letter-spacing: -2px;
     color: var(--main-color);
-
+}
+@media (max-width:767px) {
+    .h2-component h2{
+        font-size: 2rem;
+    }
 }
 .h2-component .coffe-logo{
     color: var(--bg-color);
